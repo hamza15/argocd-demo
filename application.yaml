@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/hamza15/tangerine-demo.git
+    repoURL: https://github.com/hamza15/argocd-demo.git
     targetRevision: HEAD
     path: dev
   destination: 
