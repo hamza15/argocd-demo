@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-deployment
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: tangerine-app
+    spec:
+      containers:
+      - name: tangerine-app
+        image: sardan5/tangerine:0.0.1
+        ports:
+        - containerPort: 4200
+        
