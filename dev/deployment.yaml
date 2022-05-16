@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: tangerine-app
-        image: sardan5/tangerine:0.0.2
+        image: sardan5/tangerine:0.1.19
         ports:
         - containerPort: 4200
         
