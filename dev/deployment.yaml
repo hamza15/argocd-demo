@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tangerine-deployment
+  name: visualize-ci-deployment
 spec:
   selector:
     matchLabels:
-      app: tangerine-app
+      app: visualize-ci-app
   replicas: 2
   template:
     metadata:
       labels:
-        app: tangerine-app
+        app: visualize-ci-app
     spec:
       containers:
-      - name: tangerine-app
-        image: sardan5/tangerine:0.1.21
+      - name: visualize-ci-app
+        image: sardan5/drone-demo:v-5
         ports:
         - containerPort: 4200
         
